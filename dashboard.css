@@ -1,0 +1,45 @@
+.logo{
+    width: 80px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    height: 150px;
+
+}
+
+h2{
+
+    margin-top: 25px;
+    font-weight: bolder;
+}
+.profile{
+    border-radius: 50%;
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  
+    
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: bolder;
+  
+}
+
+li> button{
+    border-top: 10px;
+}
+
+.header{
+    background-color: blue;
+}

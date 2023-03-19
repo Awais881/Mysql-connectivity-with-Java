@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        BODY{
+          
+            
+
+
+   
+background: #ffd89b; 
+background: -webkit-linear-gradient(180deg, #19547b, #ffd89b); 
+
+background: linear-gradient(360deg, #19547b, #ffd89b); 
+
+
+
+}
+   img{
+        width: 150px;
+       }
+        .container{
+            background: none;
+            width: 500px;
+            height: 100vh;
+           
+        
+      
+        }
+      h1{
+        color: white;
+      }
+        .box{
+
+
+            width: 400px;
+            height: 30px;
+            border: 1px solid white;
+            padding: 10px;
+            color: green;
+           
+        }
+        .under{
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.568);
+        
+        }
+   
+        a{
+            text-decoration: none;
+            color: rgb(253, 241, 220);
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        button:hover{
+            background-color: #58716D;
+            cursor: pointer;
+            color:white;
+        }
+     
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.remember >span{
+    margin-right: 300px;
+    color: white;
+     
+}
+.remember> span> input{
+    margin-top: 33px;
+    color: white;
+    border: 1PX SOLID black;
+    outline: none;
+}
+button{
+    
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            margin-top: 20px;
+            font-weight: normal;
+            font-weight: bolder;
+}
+    input[type="text"],input[type="password"]{
+        background: transparent;
+    }
+
+    input[type="text"]:focus,input[type="password"]:focus{
+        border: 1px solid blue;
+        outline: none;
+    }
+.gender{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+.gender> p{
+    margin-left: 27px;
+    
+}
+.select {
+  width: 80;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.user-type{
+    color: white;
+    font-size: large;
+    margin-right: 160px;
+}
+.dob{
+    margin-top: 10px;
+    color: white;
+    margin-right: 270px;
+}
+    </style>
+</head>
+<body>
+     <center>
+        <div class="logo"><img src="../img/aligarh.png" alt="logo"></div>
+    </center>
+    <br> <br>
+    <center>
+    <div class="container">
+
+<div class="under">
+    <h1>
+    STUDENT PORTAL SIGNUP
+    </h1>
+    <form action="../JspFiles/receivedData.jsp" method="post">
+    <div><input type="text" placeholder="Gr No" class="box" name="Grno"></div> <br>
+    <div><input type="text" placeholder="User Name" class="box" name="userName"></div> <br>
+     <div><input type="text" placeholder="Email Address" class="box" name="email"></div> <br>
+     <div><input type="password" placeholder="Password" class="box" name="password"></div> <br>
+     <div><input type="password" placeholder="Confirm Password" class="box" name="con-pass"></div>
+     <div class="gender">
+        
+        <p >Gender</p>
+         <input type="radio" name="gender" value="Male">
+         <label for="male">Male</label>
+         <input type="radio"  name="gender" value="Female">
+         <label for="female">Female</label>
+         
+
+     </div>
+       <div class="user-type">
+        <label for="users">Choose user type :</label>
+
+        <select id="users" class="select" name="userType">
+          <option value="student" >Student</option>
+          <option value="admin">Admin</option>
+          <option value="employee">Employee</option>
+        
+        </select>
+
+       </div>
+   <div class="dob">
+    <span>DOB :</span>
+    <input type="date" name="date" id="" value="14/12/2022">
+   </div> 
+    <div class="remember"> 
+    <span> <input type="checkbox" name="" id=""> Remember Me</span>
+</div>  
+
+<button type="submit" onclick="signup()">SIGNUP</button>
+</form>
+     <span><a href="../htmlfiles/login.html"> already have an account? Login here</a></span> <br> <br>
+     <span><a href="#"> Forget Password </a></span><br>
+     <span><a href="../index.html"> Back</a></span>
+
+
+</div>
+</div>
+  <div>
+    <p>© 2016 - 2021 Faculty Portal. All rights reserved | Design by Muhammad Awais 109-B</p>
+  </div>
+
+</center>
+<script>
+    const signup= () =>{
+        alert("Signup Succesfull")
+    }
+</script> 
+</body>
+</html>
